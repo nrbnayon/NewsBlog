@@ -66,7 +66,7 @@
 
 ---
 <!-- ABOUT THE PROJECT -->
-## 👍About The Project
+## About The Project
 
 [![videos][product-screenshot]](https://example.com)
 
@@ -75,7 +75,7 @@
 ---
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
-## 🤞Built With
+## Built With
 
 * [![Node Js][Node.js]][Node-url]
 * [![React Native][React.js]][React-url]
@@ -93,7 +93,7 @@
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install -g expo-cli
   ```
 ---
 # ⚡Installation
@@ -129,34 +129,34 @@ Open Windows Powershell in ```bash RUN AS ADMINISTRATOR ``` mode.
     expo start
     ```
 
-    Additionally, watch *[this video](https://www.youtube.com/watch?v=GyHSPrFh9QM)* to see **how to run Expo with React Native**.
 
-11. **Review** every single file and **customize** it as you like.
-12. Build your project by your own. 🚀
 
-⚠️ _Customize every file to fit your requirements_ ⚠️
 
----
-## Usage
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
+
+
+
+
+
+
 
 ---
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
-## 🌲Roadmap
-   1. A 
-   2. B
-   3. C
-   4. D
-   5. E
-   6. F
-         1. A 
-         2. A 
-         3. B
-         4. B
-         5. A 
-         6. A 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 ## 😊 Project Featurs
 ### Front-end
@@ -170,7 +170,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - ★ Push notifications
 - ★ User profile
 - ★ Like and Comment
-
+l
 ### Back-end
 - ★ Authentication and Authorization
 - ★ Content Management - (CRUD)
@@ -182,31 +182,31 @@ See the [open issues](https://github.com/nrbnayon/NewsBlog/issues) for a full li
 
 ---
 <!-- CONTRIBUTING -->
-## 🤝🤝Contributing
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## Contributing
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/nrb/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/nrb/AmazingFeature`)
-5. Open a Pull Request
+
 
 ---
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 ## 📝 **Additional notes**
 
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-* If you are using **Windows**.
-  1. Install **[git for Windows](https://git-scm.com/download/win)**.
-  2. Right-click on the git repository folder and click "*git bash here*".
-  3. Then just perform all the code above.
+
+
+
+
+
+
 
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -216,11 +216,11 @@ Project Link: [https://github.com/nrbnayon/NewsBlog](https://github.com/nrbnayon
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 ---
-## Acknowledgments
 
-* []()
-* []()
-* []()
+
+
+
+
 
 ---
 
@@ -235,7 +235,7 @@ Project Link: [https://github.com/nrbnayon/NewsBlog](https://github.com/nrbnayon
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 ## 🎉 Hope the project helpful for all.
-Made with a lot of ❤️ by @nrbnayon
+
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/nrbnayon/NewsBlog.svg?style=for-the-badge
