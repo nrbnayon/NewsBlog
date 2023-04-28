@@ -60,6 +60,7 @@ exports.createPost = async (req, res) => {
   if (featured) await addToFeaturedPost(newPost._id);
 
   res.json({
+    message: "Successfull",
     post: {
       id: newPost._id,
       title,
@@ -207,7 +208,6 @@ exports.getFeaturedPosts = async (req, res) => {
     .populate("post");
 
   res.json({
-    message: "Featured Post Success",
     posts: featuredPosts.map(({ post }) => ({
       id: post._id,
       title: post.title,
@@ -227,8 +227,9 @@ exports.getPosts = async (req, res) => {
     .skip(parseInt(pageNo) * parseInt(limit))
     .limit(parseInt(limit));
 
+    const postCount = await Post.countDocuments()
+
   res.json({
-    message: "successfull",
     posts: posts.map((post) => ({
       id: post._id,
       title: post.title,
@@ -236,7 +237,10 @@ exports.getPosts = async (req, res) => {
       slug: post.slug,
       thumbnail: post.thumbnail?.url,
       author: post.author,
+      createdAt: post.createdAt,
+      tags: post.tags,
     })),
+    postCount,
   });
 };
 
@@ -251,14 +255,15 @@ exports.searchPost = async (req, res) => {
     const posts = await Post.find({ title: { $regex: title, $options: "i" } });
   
     res.json({
-      message: "successfull",
       posts: posts.map((post) => ({
-        id: post._id,
-        title: post.title,
-        meta: post.meta,
-        slug: post.slug,
-        thumbnail: post.thumbnail?.url,
-        author: post.author,
+      id: post._id,
+      title: post.title,
+      meta: post.meta,
+      slug: post.slug,
+      thumbnail: post.thumbnail?.url,
+      author: post.author,
+      createdAt: post.createdAt,
+      tags: post.tags,
       })),
     });
   };
@@ -297,8 +302,6 @@ exports.searchPost = async (req, res) => {
   };
   
 
-
-
   exports.uploadImage = async (req, res) => {
 
     const { file } = req;
@@ -308,7 +311,7 @@ exports.searchPost = async (req, res) => {
 
     const { secure_url: url } = await cloudinary.uploader.upload(
           file.path)
-    res.status(201).json({
+    res.status(200).json({
       message: "successfull",
       image: url,
     });

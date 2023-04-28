@@ -1,8 +1,7 @@
 const router = require('express').Router();
 
-const { body } = require('express-validator');
 const { createPost, deletePost, updatePost, getPost, getFeaturedPosts, 
-    uploadImage, getPosts, searchPost, getRelatedPosts } = require('../controllers/post');
+     getPosts, searchPost, getRelatedPosts, uploadImage } = require('../controllers/post');
 const multer = require('../middlewares/multer');
 const { validate, postValidator } = require('../middlewares/postValidator');
 const { parseData } = require('../middlewares');
@@ -34,8 +33,8 @@ router.get("/related-posts/:postId", getRelatedPosts);
 
 
 router.post(
-    "/uplaod-image", 
+    "/upload-image", 
     multer.single("image"), 
-    uploadImage
+    uploadImage,
 );
 module.exports = router;
