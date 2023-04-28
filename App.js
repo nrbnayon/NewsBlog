@@ -7,7 +7,6 @@ import CounterScreen from "./src/Screens/CounterScreen";
 import Login from "./src/Screens/Login/Login";
 import SignUp from "./src/Screens/Signup/Signup";
 import ForgetPassword from "./src/Screens/ForgetPassword/Forgetpassword";
-feature/nkh/backend-api
 const stack = createStackNavigator();
 
 function App() {
